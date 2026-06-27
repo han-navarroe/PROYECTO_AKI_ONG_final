@@ -1,0 +1,410 @@
+/* ══ MOBILE NAV ══ */
+@media (max-width:768px){
+
+  .menu-hamburguesa{
+    display:flex;
+  }
+
+  .menu-principal{
+    display:none;
+    position:absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background:var(--blanco);
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+  }
+
+  .menu-principal.active{
+    display:block;
+  }
+
+  .nav-list{
+    flex-direction:column;
+    padding:20px;
+  }
+}
+
+
+@media (max-width:768px){
+
+/*═══ seccion hero en index ═══*/
+  .hero {
+    padding-top: 6.8rem;
+  }
+  .hero-interior {
+    grid-template-columns: 1fr; /* Una sola columna vertical */
+    text-align: center;
+    gap: 3.1rem;
+  }
+  .hero-desc {
+    margin: 0 auto 2rem;
+  }
+  .hero-btns {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-float-card { 
+    left: 0.01rem;
+  }
+  .hero-img-frame {
+    height: 21rem;
+    z-index: 20%;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+
+
+  .impacto-strip {
+    grid-template-columns: repeat(2, 1fr); /* Se divide en 2x2 en tablets */
+    margin: 40px 20px; /* Pierde el flotado negativo para acomodarse mejor */
+    gap: 32px;
+  }
+  
+  .imp-item {
+    /* Rompe la línea derecha en el segundo elemento y la quita en los de abajo */
+    border-right: none; 
+  }
+
+  .impacto-strip {
+    grid-template-columns: 1fr; /* 1 sola columna en celulares chicos */
+    padding: 30px 16px;
+  }
+  
+  .imp-num {
+    font-size: 28px;
+  }
+
+  .nosotros-grid {
+    grid-template-columns: 1fr; /* Pasa a una sola columna vertical */
+    gap: 48px;
+  }
+  
+  .nos-img-stack {
+    height: 350px;
+    max-width: 500px;
+    margin: 0 auto; /* Centra las fotos en pantallas móviles */
+    
+  }
+  
+  .nos-content {
+    text-align: left;
+    margin: 0;
+  }
+  
+  .partner-badge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .proyectos-grid {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    gap: 24px;
+  }
+  
+  .voluntarios-cta {
+    flex-direction: column; /* Alineación vertical en móviles */
+    text-align: center;
+    padding: 32px 24px;
+  }
+  
+  .btn-white {
+    width: 100%;
+    text-align: center;
+  }
+
+  .alianzas-grid {
+    grid-template-columns: 1fr; /* Una sola columna principal en pantallas medianas/chicas */
+    gap: 48px;
+  }
+
+  .alianzas-cards {
+    grid-template-columns: 1fr; /* Tarjetas de aliados una abajo de otra en celulares */
+  }
+  .alianzas-banner {
+    padding: 40px 24px;
+  }
+  .alianzas-banner h2 {
+    font-size: 28px;
+  }
+
+  .galeria-masonry { grid-template-columns: repeat(2, 1fr); }
+  .videos-grid, .testi-grid { grid-template-columns: 1fr; }
+
+  .galeria-masonry { grid-template-columns: 1fr; }
+  .galeria-tabs { flex-wrap: wrap; }
+
+  .lightbox-prev, .lightbox-next {
+    font-size: 40px;
+    bottom: 24px; /* Mueve las flechas abajo para que no estorben en pantallas verticales */
+    position: fixed;
+  }
+  
+  .lightbox-prev { left: 30%; transform: translateX(-50%); }
+  .lightbox-next { right: 30%; transform: translateX(50%); }
+  
+  .lightbox img {
+    max-width: 95%;
+  }
+
+  .como-grid {
+    grid-template-columns: 1fr; /* Pasa a una sola columna vertical */
+    gap: 36px;
+  }
+  
+  .como-cta-box {
+    position: static; /* Pierde la fijeza en móviles para fluir naturalmente */
+    padding: 32px 24px;
+  }
+
+  .como-row {
+    padding: 16px;
+    gap: 14px;
+  }
+  .como-row-arrow {
+    display: none; /* Oculta la flecha en pantallas muy angostas para dar espacio al texto */
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr); /* Se vuelve una rejilla de 2x2 en tablets */
+    gap: 16px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr; /* Una sola columna en celulares verticales */
+  }
+  
+  .impacto-row {
+    padding: 16px;
+    gap: 14px;
+  }
+  
+  .impacto-row-arrow {
+    display: none; /* Ocultamos la flecha en pantallas muy chicas para priorizar el texto */
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr; /* Pasa a formato vertical en tabletas */
+    gap: 48px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr; /* Nombre y correo apilados en celulares */
+  }
+  .contacto-form {
+    padding: 24px 20px;
+  }
+  .redes {
+    grid-template-columns: 1fr; /* Redes en fila única móvil */
+  }
+
+  .cultura-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+  }
+
+  .page-hero-title { font-size: 34px; }
+  .info-two-col { grid-template-columns: 1fr; gap: 40px; }
+  .mv-grid { grid-template-columns: 1fr; gap: 24px; }
+  .section-title { margin-bottom: 28px; font-size: 26px; }
+
+  .cultura-grid {
+    grid-template-columns: 1fr; /* 1 columna en celulares verticales */
+  }
+  .historia-timeline {
+    padding-left: 24px;
+  }
+  .historia-timeline::before {
+    left: 5px;
+  }
+  .timeline-item::before {
+    left: -24px;
+  }
+  .mv-card {
+    padding: 24px;
+  }
+
+  .proyecto-big-card { flex-direction: column; text-align: center; padding: 24px; }
+  .perfil-grid { grid-template-columns: 1fr; }
+
+  .wishlist-grid { grid-template-columns: repeat(2, 1fr); }
+  .actividades-grid, .dos-col-simple { grid-template-columns: 1fr !important; gap: 32px !important; }
+
+  .wishlist-grid { grid-template-columns: 1fr; }
+
+  .alianzas-grid {
+    grid-template-columns: 1fr; /* Una sola columna principal en pantallas medianas/chicas */
+    gap: 48px;
+  }
+
+  .alianzas-cards {
+    grid-template-columns: 1fr; /* Tarjetas de aliados una abajo de otra en celulares */
+  }
+
+  from { opacity: 0; } to { opacity: 1; }
+
+  .como-grid-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    gap: 24px;
+  }
+  .sponsors-grid-cuatro {
+    grid-template-columns: repeat(2, 1fr); /* Cuadrícula 2x2 de logos en tablet */
+  }
+
+  .como-grid-cards, .sponsors-grid-cuatro {
+    grid-template-columns: 1fr; /* 1 sola columna en celulares */
+  }
+  .donar-card {
+    padding: 32px 20px;
+  }
+
+  .stats-grid-cuatro {
+    grid-template-columns: repeat(2, 1fr); /* Formato 2x2 de números en tablets */
+    gap: 20px;
+  }
+  .historias-grid-tres {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de historias en tablets */
+  }
+
+  .stats-grid-cuatro, .historias-grid-tres {
+    grid-template-columns: 1fr; /* 1 sola columna en celulares */
+  }
+  .transparencia-box {
+    padding: 32px 20px;
+  }
+  .transparencia-titulo {
+    font-size: 20px;
+  }
+
+  .contacto-grid, .form-grid-vol {
+    grid-template-columns: 1fr; /* Apilamiento vertical */
+    gap: 32px;
+  }
+  .voluntario-seccion-oscura {
+    padding: 32px 20px;
+  }
+  .vol-title { font-size: 26px; }
+
+  .form-row-dos {
+    grid-template-columns: 1fr; /* Nombre y correo se separan en celulares */
+  }
+  .contacto-form-wrapper {
+    padding: 24px 16px;
+  }
+
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+
+  .nosotros-grid { grid-template-columns: 1fr; }
+  .nos-img-stack { max-width: 500px; }
+  .proyectos-grid { grid-template-columns: 1fr; }
+  .voluntarios-cta { grid-column: 1; }
+  .alianzas-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .contacto-grid { grid-template-columns: 1fr; }
+  
+  .impacto-strip { grid-template-columns: 1fr 1fr; }
+  .como-grid { grid-template-columns: 1fr; }
+  .como-cta-box { position: static; }
+  .galeria-masonry { columns: 2; }
+  .videos-grid { grid-template-columns: 1fr 1fr; }
+  .testi-grid { grid-template-columns: 1fr 1fr; }
+
+  section { padding: 60px 20px; }
+  nav { padding: 0 16px; }
+  .hero-inner { padding: 40px 20px; }
+  .hero-title { font-size: 38px; letter-spacing: -1px; }
+
+  .hero-badge-corner { display: none; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .impacto-strip { grid-template-columns: 1fr 1fr; }
+  .galeria-masonry { columns: 1; }
+  .videos-grid { grid-template-columns: 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .alianzas-banner { padding: 28px; }
+  .form-row { grid-template-columns: 1fr; }
+  .sponsors-grid { grid-template-columns: 1fr 1fr; }
+
+  /*footer de todas las paginas */
+  .footer-principal {
+     grid-template-columns: 1fr; 
+     gap: 28px; 
+    }
+  .footer-bottom { 
+    flex-direction: column; 
+    gap: 14px; 
+    text-align: center; 
+  }
+
+
+.container{
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+/* los cambios para comoayudar */
+.difundir-titulo{
+  font-size: 300%;
+}
+.seccion-titulo{
+  font-size: 200%;
+}
+.seccion-donacion{
+  display: block;
+  grid-template-columns: 1fr;
+} .seccion-voluntariado{
+  display: block;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+/*los cambios para proyecto*/
+.section-home{
+  display: block;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.nos-img-stack {
+  width: 95%;
+  right: 0.5rem;
+}
+
+/*pa pare del canal*/
+#canal{
+  font-size: 0.75rem;
+  
+}
+/*proyecto*/
+.container p{ 
+  font-size: 1.2rem;
+}
+
+.page-hero-desc{
+  padding: 2rem;
+}
+.section-requisitos{
+  text-align: center;
+ 
+}
+.section-donaciones{
+  text-align: center;
+ 
+}
+.section-home .container{
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.container .info-two-col {
+  display: block;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.container .info-two-col .albergues{
+  display: block;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+}
+}

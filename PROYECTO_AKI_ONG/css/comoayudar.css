@@ -1,0 +1,558 @@
+/* ══════════════════════════════════
+   VARIABLES — edita colores aquí
+══════════════════════════════════ */
+:root {
+  --naranja: #e85c1a;
+  --naranja-oscuro: #C44A0E;
+  --naranja-claro: #FFF3ED;
+  --naranja-medio: #FFD4B8;
+  --negro: #111010;
+  --gris: #5C5C5C;
+  --gris-claro: #F7F5F3;
+  --borde: #E5E1DC;
+  --blanco: #FFFFFF;
+  --sombra: 0 4px 32px rgba(232,92,26,0.12);
+  --sombra-hover: 0 12px 40px rgba(232,92,26,0.22);
+  --radio: 20px;
+  --radio-sm: 12px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  color: var(--negro);
+  background: var(--blanco);
+}
+/* ══════════════════════════════════
+   HEADER: LOGO Y NAVEGADOR
+══════════════════════════════════ */
+/* ========= HEADER ========= */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:var(--blanco);
+  background-image: url(https://img.magnific.com/vector-gratis/marco-vector-perros-sobre-fondo-blanco_53876-127700.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  background-position: center;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  z-index:1000;
+}
+
+.navegacion{
+  max-width:100%;
+  margin:auto;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+}
+
+.logo-img{
+  height:60px;
+  width:auto;
+}
+
+.menu-principal{
+  display:flex;
+  align-items:center;
+}
+
+.nav-list{
+  display:flex;
+  align-items:center;
+  gap:0.9rem;
+  list-style:none;
+}
+
+.nav-list a{
+  color:var(--gris);
+  font-weight:500;
+  padding:9px 14px;
+  border-radius:100px;
+  transition:.2s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-list a:hover,
+.nav-list a.active{
+  color:var(--naranja);
+  background:var(--naranja-claro);
+}
+.nav-list .nav-cta{
+  color: var(--blanco);
+}
+.nav-cta{
+  background:var(--naranja);
+  color:var(--blanco);
+  padding:9px 20px;
+  border-radius:100px;
+  font-weight:700;
+}
+
+.menu-hamburguesa{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.menu-hamburguesa span{
+  width:25px;
+  height:3px;
+  background:var(--naranja-oscuro);
+  border-radius:10px;
+}
+
+
+/* ══════════════════════════════════
+   BOTÓN NARANJA GENÉRICO
+══════════════════════════════════ */
+.btn-naranja {
+  display: inline-block;
+  background-color: var(--naranja);
+  color: #ffffff;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 24px;
+  transition: background 0.3s ease;
+}
+
+.btn-naranja:hover {
+  background-color: var(--naranja-oscuro);
+  color: #fff;
+}
+
+/* ══════════════════════════════════
+   1. HERO
+══════════════════════════════════ */
+.seccion-hero {
+  padding: 160px 40px 80px;
+  text-align: center;
+  background-color: var(--gris-claro);
+  margin-top: 0px; /* compensa el header fijo */
+}
+
+.hero-tag {
+  color: var(--naranja);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-titulo {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 16px 0;
+  color: var(--negro);
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--gris);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════════
+   TÍTULO Y DESCRIPCIÓN GENÉRICOS
+══════════════════════════════════ */
+.seccion-titulo {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--negro);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.seccion-desc {
+  font-size: 1.1rem;
+  color: var(--gris);
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+/* ══════════════════════════════════
+   2. VOLUNTARIADO (crema)
+══════════════════════════════════ */
+.seccion-voluntariado {
+  background-color: #fdf0e0;
+  padding: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 60px;
+}
+
+.vol-texto {
+  flex: 1;
+}
+
+.vol-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imgvol {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+/* ══════════════════════════════════
+   3. DONACIÓN DE BIENES / APORTES
+══════════════════════════════════ */
+.seccion-donacion {
+  background-color: var(--blanco);
+  padding: 100px 80px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.don-imagen {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.imgdon {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.don-boton-centro {
+  grid-column: 1 / -1;
+}
+
+/* ══════════════════════════════════
+   4. ALIANZAS INSTITUCIONALES
+══════════════════════════════════ */
+.seccion-alianzas {
+  background-color: var(--gris-claro);
+  padding: 20px 10px;
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imgalianzas {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* ══════════════════════════════════
+   5. DIFUNDIR (negro)
+══════════════════════════════════ */
+.seccion-difundir {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 40px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.difundir-titulo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.difundir-desc {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.flecha-bajar {
+  font-size: 2.5rem;
+  color: #5C5C5C;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+/* ══════════════════════════════════
+   6. TARJETA WPS (verde)
+══════════════════════════════════ */
+.tarjeta-wps {
+  background-color: #3eb326;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.imgwps {
+  max-width: 90%;
+  width: auto;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.btnwps {
+  display: inline-block;
+  background: linear-gradient( #5cdd92, #319a52);
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btnwps:hover {
+  background: linear-gradient(to right,#56e154, #319a52);
+  color: #000000;
+}
+
+/* ══════════════════════════════════
+   7. TARJETA IG (degradado)
+══════════════════════════════════ */
+.tarjeta-ig {
+  background: linear-gradient(to right, #f5a623, #f05a78);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.imgig {
+  max-width: 90%;
+  width: auto;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.btnig {
+  display: inline-block;
+  background: linear-gradient(to right, #f05a78,#f5a623);
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btnig:hover {
+  background: linear-gradient(to right, #f5a623, #f05a78);
+  color: #000000;
+}
+
+/* ══════════════════════════════════
+   8. TARJETA TIKTOK (negro)
+══════════════════════════════════ */
+.tarjeta-tiktok {
+  background-color: #000000;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.imgtiktok {
+  max-width: 90%;
+  width: auto;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.btntiktok {
+  display: inline-block;
+  background: linear-gradient(to left, cyan, rgb(199, 40, 104));
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btntiktok:hover {
+  background: linear-gradient( cyan, rgb(199, 40, 104));
+  color: #000000;
+}
+
+/* ══════════════════════════════════
+   9. CIERRE: Y SÉ PARTE DE ELLAS
+══════════════════════════════════ */
+.tarjeta-final {
+  background-color: #f5c842;
+  padding: 100px 40px;
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frasedecierre {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.imgcierre {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.emoji-latido {
+            font-size: 80px; /* Tamaño del emoji */
+            display: inline-block;
+            animation: latido 0.8s infinite alternate; /* Llama a la animación */
+        }
+
+        /* Definimos los movimientos de la animación */
+        @keyframes latido {
+            0% {
+                transform: scale(1); /* Tamaño normal */
+            }
+            100% {
+                transform: scale(1.2); /* Crece un 20% */
+              }}
+/* ══════════════════════════════════
+   FOOTER
+══════════════════════════════════ */
+footer {
+  background: var(--negro);
+  color: var(--blanco);
+  padding: 4rem 6rem 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-principal {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.logo-marca {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-marca-text {
+  font-family: 'fraunces', serif;
+  font-weight: 900;
+  font-size: 1.32rem;
+}
+
+.footer-lateral p {
+  font-size: 0.8rem;
+  color: var(--gris);
+  line-height: 1.7rem;
+  margin-top: 1rem;
+  max-width: 18rem;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--blanco);
+  margin-bottom: 1.2rem;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color .2s;
+  color: var(--gris);
+}
+
+.footer-links a:hover { color: var(--naranja); }
+
+.footer-bottom {
+  border-top: 0.02rem solid var(--gris);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,.35);
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 40px;
+  height: 40px;
+}
+.redes-sociales li{
+  list-style: none;
+}

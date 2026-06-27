@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <!--aspectos técnicos-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONTACTO - AKÍ ONG</title>
+  <!--seo (optimización de motores de busqueda) aspecto a revisar-->
+<meta name="description" content="AKÍ es una ONG juvenil sin fines de lucro que trabaja por el bien social y animal en Perú. Únete a nosotros puedes contactarnos en los siguentes canales. ">
+<link rel="canonical" href="https://www.aki-ong.org/contacto">
+  <!--favicon-->
+<link rel="icon" href="../img/logo.png" type="image/png">
+ <!--aspectos de rendimientos y estilos -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<script src="../js/main.js" defer></script>
+<script src="../js/formulario.js" defer></script> 
+</head>
+<!--cuerpo dela pagina-->
+<body>
+<!-- ════════════════════════════════
+  HEADER Y NAVEGACIÓN
+══════════════════════════════════ -->
+<header class="navegacion">
+  <!--contiene la imagen del logo-->
+  <a href="index.html" class="logo">
+    <img src="../img/logo.png" alt="Logo de AKÍ ONG" class="logo-img">
+  </a>
+  <!--navegación principal-->
+  <nav class="menu-principal" id="menu-principal">
+    <!--contiene los links de navegacion-->
+    <ul class="nav-list" id="menu-principal"> 
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="somosAKI.html">Somos AKI</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="alianzas.html">Alianzas</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="comoAyudar.html">Como ayudar</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+      <!--boton principal nav : editar href y texto -->
+      <li><a href="contacto.html" class="nav-cta" id="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+  <button class="menu-hamburguesa" id="boton-menu" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</header>
+<!-- ════════════════════════════════
+     CONTENIDO PRINCIPAL: CONTACTO
+══════════════════════════════════ -->
+<main class="secundaria-main">
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="hero-tag">Escríbenos</span>
+      <h1 class="page-hero-title">Contáctanos</h1>
+      <p class="page-hero-desc">Estamos aquí para escucharte. Comunícate con nosotros por cualquiera de estos medios o postula directamente a nuestro equipo.</p>
+    </div>
+  </div>
+
+  <section class="section-home">
+    <div class="container">
+      
+      <!-- REJILLA DE CONTACTO PRINCIPAL (Reemplaza col-lg de Bootstrap) -->
+      <div class="contacto-grid">
+        
+        <!-- Columna Izquierda: Información de contacto -->
+        <div class="contacto-info-col fade">
+          <span class="section-tag">Información</span>
+          <h2 class="section-title-sub">Habla con nosotros</h2>
+          
+          <div class="contacto-card-item"><div class="cci-icon">✉️</div><div><h4>Correo</h4><p><a href="mailto:akiperuvoluntariado@gmail.com">akiperuvoluntariado@gmail.com</a></p></div></div>
+          <div class="contacto-card-item"><div class="cci-icon">💬</div><div><h4>WhatsApp</h4><p><a href="https://wa.me/51929803405" target="_blank">+51 929 803 405</a></p></div></div>
+          <div class="contacto-card-item"><div class="cci-icon">📍</div><div><h4>Ubicación</h4><p>Lima, Perú</p></div></div>
+          
+          <div class="contacto-card-item">
+            <div class="cci-icon">🌐</div>
+            <div>
+              <h4>Redes sociales</h4>
+              <div class="redes-mini-gap" style="margin-top: 8px;">
+                <a href="https://www.instagram.com/aki_peru_voluntariado?igsh=" target="_blank" class="btn-outline-mini">📸</a>
+                <a href="https://whatsapp.com/channel/0029VbDmSkM5kg78yit7I50z"   target="_blank" class="btn-outline-mini">💬</a>
+                <a href="https://www.tiktok.com/@ong_aki"   target="_blank" class="btn-outline-mini">🎵</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario de contacto general -->
+        <div class="contacto-form-wrapper fade fade-d1">
+          <!-- Corrección: Se cambió a la tipografía corporativa Fraunces -->
+          <h3 class="form-box-title">Envíanos un mensaje</h3>
+          <form id="formContacto" novalidate>
+            <div class="form-row-dos">
+              <div class="form-group"><label>Nombre</label><input type="text" id="cNombre" placeholder="Tu nombre completo"></div>
+              <div class="form-group"><label>Correo electrónico</label><input type="email" id="cCorreo" placeholder="tu@correo.com"></div>
+            </div>
+            <div class="form-group">
+              <label>Asunto</label>
+              <select id="cAsunto">
+                <option value="">Selecciona un tema...</option>
+                <option>Quiero ser voluntario</option>
+                <option>Quiero donar</option>
+                <option>Quiero ser aliado/patrocinador</option>
+                <option>Información general</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Mensaje</label><textarea id="cMensaje" placeholder="¿En qué podemos ayudarte?"></textarea></div>
+            <button type="submit" class="btn-primary w-100">Enviar mensaje ✉️</button>
+            <a href="https://wa.me/51987654321?text=Hola%20AKÍ%20ONG!" target="_blank" class="btn-outline w-100" style="margin-top:12px; display:block; text-align:center;">💬 Escribir por WhatsApp</a>
+            <div class="form-success-box" id="formExito">✅ ¡Gracias por tu mensaje! Te contactaremos pronto 🧡</div>
+          </form>
+        </div>
+
+      </div> <!-- FIN REJILLA PRINCIPAL -->
+
+      <!-- ===================================================
+           FORMULARIO EXCLUSIVO DE VOLUNTARIADO
+      =================================================== -->
+      <div class="voluntario-seccion-oscura fade" id="voluntario">
+        <div class="voluntario-form-header">
+          <span class="vol-tag">Únete al equipo</span>
+          <!-- Corrección: Se cambió a la tipografía corporativa Fraunces -->
+          <h2 class="vol-title">Formulario de voluntariado</h2>
+          <p class="vol-desc">Completa el formulario y nuestro equipo de RRHH se pondrá en contacto contigo en menos de 48 horas.</p>
+        </div>
+        
+        <form id="formVoluntario" novalidate>
+          <div class="form-grid-vol">
+            <div class="form-group"><label>Nombre completo</label><input type="text" id="vNombre" placeholder="Tu nombre" required></div>
+            <div class="form-group"><label>Correo electrónico</label><input type="email" id="vCorreo" placeholder="tu@correo.com"></div>
+            <div class="form-group"><label>Número de celular</label><input type="tel" id="vCelular" placeholder="+51 xxx xxx xxx"></div>
+            <div class="form-group"><label>Edad</label><input type="number" id="vEdad" placeholder="Mínimo 16 años" min="16"></div>
+            <div class="form-group">
+              <label>Proyecto de interés</label>
+              <select id="vProyecto">
+                <option value="">Selecciona...</option>
+                <option>CreSer (educativo)</option>
+                <option>Colitas Felices (animalista)</option>
+                <option>Ambos</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>¿Cómo nos conociste?</label>
+              <select id="vMedio">
+                <option value="">Selecciona...</option>
+                <option>Instagram</option>
+                <option>TikTok</option>
+                <option>Facebook</option>
+                <option>Un amigo</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group vol-full-width"><label>¿Por qué quieres ser voluntario?</label><textarea id="vMotivo" placeholder="Cuéntanos sobre ti y tu motivación..."></textarea></div>
+          </div>
+          <button type="submit" class="btn-primary w-100" style="margin-top: 20px;">Enviar postulación 🤝</button>
+          <div class="form-success-box" id="formVolExito">✅ ¡Postulación enviada! Nuestro equipo de RRHH se pondrá en contacto contigo. ¡Bienvenido a AKÍ! 🧡</div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="footer-principal">
+    <div class="footer-lateral">
+      <div class="logo-marca">
+        <img src="../img/logo.png" alt="el logo de aki" class="logo-img">
+        <span class="logo-marca-text">AKÍ ONG</span>
+      </div>
+      <!--footer descripcion -->
+      <p>Organizacion juvenil sin fines de lucro que trabaja por el bienestar social y animal en el Perú.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navegacion</h4>
+      <a href="index.html">Inicio</a>
+      <a href="somosAKI.html">SomosAKÍ</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="alianzas.html">Alianzas</a>
+      <a href="galeria.html">Galería</a>
+      <a href="comoAyudar.html">Cómo ayudar</a>
+      <a href="impacto.html">Impacto</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-links">
+      <h4>Proyectos</h4>
+      <a href="proyectos.html#creser">CreSer</a>
+      <a href="proyectos.html#colitas">Colitas Felices</a>
+    </div>
+    <div class="footer-links">
+      <h4>Contactanos</h4>
+      <!--footer contacto: correo, telefono y redes-->
+      <a href="mailto:akiperuvoluntariado@gmail.com">akiperuvoluntariado@gmail.com</a>
+      <a href="https://whatsapp.com/channel/0029VbDmSkM5kg78yit7I50z">canal de difucion</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p> &copy; 2025 AKÍ ONG. Todos los derechos reservados.</p>
+    <div class="footer-social">
+      <ol class="redes-sociales">
+        <li><a href="https://www.instagram.com/aki_peru_voluntariado?igsh=" target="_blank" title="Instagram"><img src="../img/footer/icon-instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://www.tiktok.com/@ong_aki" target="_blank" title="Tiktok"><img src="../img/footer/icon-tiktok.png" alt="Tiktok"></a></li>
+        <li><a href="https://whatsapp.com/channel/0029VbDmSkM5kg78yit7I50z" target="_blank" title="WhatsApp"><img src="../img/footer/icon-whatsapp.png" alt="WhatsApp"></a></li>
+      </ol>
+    </div>
+    <p>Hecho con ❤️ por AKÍ ONG </p>
+  </div>
+
+</footer>   
+</body>
+</html>
